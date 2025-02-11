@@ -11,16 +11,16 @@
 
 #define PACKET_SIZE 32
 
-// Function to send ICMP Echo Request (Ping)
+
 void send_ping(const char* ip) {
     HANDLE hIcmpFile;
-    IPAddr ipAddr = 0;  // IP address in network byte order
+    IPAddr ipAddr = 0;  
     DWORD dwRetVal;
     char sendData[PACKET_SIZE] = "Ping Test Data";
     BYTE replyBuffer[sizeof(ICMP_ECHO_REPLY) + PACKET_SIZE];
     DWORD replySize = sizeof(replyBuffer);
 
-    // Convert IP string to binary form
+   
     if (InetPtonA(AF_INET, ip, &ipAddr) != 1) {
         printf("Invalid IP address: %s\n", ip);
         return;
