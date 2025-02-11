@@ -15,13 +15,6 @@ A simple **Network Scanner** program that uses ICMP (ping) requests to check the
 - **Git** (for version control)
 - **GitHub Account** (for sharing the project)
 
-## Installation
-
-### Clone the Repository
-Clone the repository to your local machine using Git:
-```bash
-git clone https://github.com/aysenurakinci/Networkscanner.git
-
 ##Running the Program
 
 **To use the program, simply run the executable from the terminal or Visual Studio's built-in terminal with an IP address argument:
@@ -30,3 +23,8 @@ If the ping request is successful, it will output the round-trip time (in millis
 
 ##Contribution
 -Feel free to fork this project, make changes, and submit pull requests. If you find any bugs or have suggestions for improvements, please open an issue in the GitHub repository.
+### Clone the Repository
+Clone the repository to your local machine using Git:
+```bash
+git clone https://github.com/aysenurakinci/Networkscanner.git
+
